@@ -6,9 +6,9 @@
 ## 구현 계획
 - 개발 환경 구축
 - DB 설게
-- AI 모델 선정
 - 데이터 수집 및 저장
   - Kaggle의 경상, 제주 사투리 데이터 활용
+- AI 모델 선정
 - AI 모델 학습
   - 경상, 제주 사투리 학습
 - 텍스트 번역기 기능 구현
@@ -43,6 +43,11 @@
   - Python 개발을 위한 IDE
 - #### GitHub
   - 버전 관리 및 프로젝트 진행사항 기록 및 확인을 위한 플랫폼
+
+
+## DATABASE ERD
+![DialetTranslator (1)](https://github.com/user-attachments/assets/d6e60be5-0ff8-4e5d-8f49-c36022e29861)
+
 
 
 
