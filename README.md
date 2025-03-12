@@ -45,6 +45,11 @@
   - 버전 관리 및 프로젝트 진행사항 기록 및 확인을 위한 플랫폼
 
 
+## DATABASE ERD
+![DialetTranslator (1)](https://github.com/user-attachments/assets/d6e60be5-0ff8-4e5d-8f49-c36022e29861)
+
+
+
 
 ## 사용 데이터 (제주, 경상북도)
 　[Kaggle 한국어 지역 방언 분류 (제주, 경상도, 전라도)](https://www.kaggle.com/competitions/hai2023summer/overview)
