@@ -1,0 +1,15 @@
+fastapi==0.115.11
+huggingface-hub==0.29.2
+konlpy==0.6.0
+psycopg2-binary==2.9.10
+pydantic==2.10.6
+pydub==0.25.1
+SpeechRecognition==3.14.1
+SQLAlchemy==2.0.38
+torch==2.6.0
+transformers==4.49.0
+pandas==2.2.3
+numpy==2.2.3
+datasets==3.3.2
+tqdm==4.67.1
+regex==2024.11.6
