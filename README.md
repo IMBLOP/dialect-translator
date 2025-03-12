@@ -46,7 +46,7 @@
 
 
 
-## 사용 데이터 (제주, 경상북도)
+## 사용 데이터
 　[Kaggle 한국어 지역 방언 분류 (제주, 경상도, 전라도)](https://www.kaggle.com/competitions/hai2023summer/overview)
 
 　[Kaggle Korean Dialect Dictionary (제주, 경상북도)](https://www.kaggle.com/datasets/daraejang/korean-dialect-dictionary)
