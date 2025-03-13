@@ -47,7 +47,8 @@
 
 
 ## DATABASE ERD
-![DialetTranslator (1)](https://github.com/user-attachments/assets/d6e60be5-0ff8-4e5d-8f49-c36022e29861)
+![DialetTranslator (1)](https://github.com/user-attachments/assets/007e1c3b-0abc-4c4f-b56e-3156c5e94bc5)
+
 
 
 
