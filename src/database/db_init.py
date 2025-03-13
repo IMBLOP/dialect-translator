@@ -16,9 +16,13 @@ def create_tables():
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS DialectData (
             id SERIAL PRIMARY KEY,
+            source TEXT,
             region VARCHAR(50) NOT NULL,
-            dialect_text TEXT NOT NULL,
-            standard_text TEXT NOT NULL,
+            pos VARCHAR(50),
+            word TEXT NOT NULL,
+            definition TEXT NOT NULL,
+            sentence TEXT,
+            translation TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
     """)
