@@ -31,7 +31,9 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="bd89bec2-a84a-48db-a269-088ae8e8a479" object-ref="schemas/public/tables/dialectdata" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="bd89bec2-a84a-48db-a269-088ae8e8a479" dataset="public.dialectdata" active-filter-id="EMPTY_FILTER">

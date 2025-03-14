@@ -5,14 +5,14 @@ from src.database.db_connection import connect_db  # DB 연결 함수 임포트
 
 # CSV 파일 경로 설정
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-csv_file = os.path.join(BASE_DIR, "data", "gsang_dialect.csv")
+csv_file = os.path.join(BASE_DIR, "data", "jeju_dialect.csv")
 
 # CSV 데이터 불러오기
 df = pd.read_csv(csv_file, header=None, names=["id", "source", "pos", "word", "definition", "sentence", "translation"])
 
 # 첫 번째 id 컬럼 삭제 및 새로운 인덱스 부여
 df.drop(columns=["id"], inplace=True)
-df.insert(0, "region", "경상도")  # region 컬럼 추가
+df.insert(0, "region", "제주도")  # region 컬럼 추가
 
 # 빈 값(NaN)을 None으로 변환 (DB 입력 시 Null 처리)
 df = df.where(pd.notna(df), None)
