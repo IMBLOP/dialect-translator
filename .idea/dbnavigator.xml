@@ -4,6 +4,11 @@
     <mappings />
     <preferences />
   </component>
+  <component name="DBNavigator.Project.DataEditorManager">
+    <record-view-column-sorting-type value="BY_INDEX" />
+    <value-preview-text-wrapping value="true" />
+    <value-preview-pinned value="false" />
+  </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
       <assistant-state connection-id="bd89bec2-a84a-48db-a269-088ae8e8a479" default-profile-name="" selected-profile-name="" selected-model-name="" assistant-type="GENERIC" selected-action="SHOW_SQL" availability="UNCERTAIN" acknowledgement="NONE">
@@ -29,7 +34,11 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="bd89bec2-a84a-48db-a269-088ae8e8a479" dataset="public.dialectdata" active-filter-id="" />
+    <filter-actions connection-id="bd89bec2-a84a-48db-a269-088ae8e8a479" dataset="public.dialectdata" active-filter-id="EMPTY_FILTER">
+      <filter id="330cdeb0-2a3d-49aa-8b17-0dc31ab2dd86" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
