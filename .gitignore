@@ -4,4 +4,5 @@ db_connection.py
 
 *.log
 *.tmp
+
 __pycache__/
