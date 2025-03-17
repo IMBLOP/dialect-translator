@@ -6,3 +6,5 @@ db_connection.py
 *.tmp
 
 __pycache__/
+
+.idea/
