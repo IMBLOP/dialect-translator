@@ -10,7 +10,8 @@ def init_db():
             CREATE TABLE GsangDialectData (
                 id SERIAL PRIMARY KEY,
                 dialect TEXT NOT NULL,   -- 경상도 사투리 문장
-                standard TEXT NOT NULL  -- 표준어 번역
+                standard TEXT NOT NULL,  -- 표준어 번역
+                data_type VARCHAR(50) NOT NULL CHECK (data_type IN ('train', 'validation'))
             );
         """)
 

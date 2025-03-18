@@ -5,7 +5,7 @@ import csv
 # 현재 스크립트(insert_data.py)의 절대 경로를 기준으로 CSV 파일 경로 설정
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-processed_dir = os.path.join(BASE_DIR, "data/gsang_processed_data/Validation")
+processed_dir = os.path.join(BASE_DIR, "data/gsang_processed_data/Training")
 
 # 정규 표현식 패턴 정의
 pattern = r'&[a-zA-Z0-9]+&|\(.*?\)|[)]|-[^-\n]*-|{.*?}'
