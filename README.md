@@ -7,11 +7,11 @@
 - 개발 환경 구축
 - DB 설계
 - 데이터 수집 및 저장
-  - Kaggle의 경상, 제주 사투리 데이터 활용
-- AI 모델 선정
+  - AI HUB의 경상도 사투리 데이터 활용
 - 데이터 가공
+- AI 모델 선정
 - AI 모델 학습
-  - 경상, 제주 사투리 학습
+  - 경상도 사투리 학습
 - 텍스트 번역기 기능 구현
 - 음성 인식 후 텍스트로 변환하는 모듈 추가
 - 추후 다른 지역 데이터도 추가 및 학습
@@ -47,16 +47,12 @@
 
 
 ## DATABASE ERD
-![DialetTranslator (1)](https://github.com/user-attachments/assets/007e1c3b-0abc-4c4f-b56e-3156c5e94bc5)
-
 
 
 
 
 ## 사용 데이터
-　[Kaggle 한국어 지역 방언 분류 (제주, 경상도, 전라도)](https://www.kaggle.com/competitions/hai2023summer/overview)
-
-　[Kaggle Korean Dialect Dictionary (제주, 경상북도)](https://www.kaggle.com/datasets/daraejang/korean-dialect-dictionary)
+　[AI HUB 한국어 방언 발화(경상도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=119)
 
 ---
 
