@@ -8,3 +8,5 @@ db_connection.py
 __pycache__/
 
 .idea/
+
+/data/gsang_original_data/
