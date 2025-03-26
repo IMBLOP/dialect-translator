@@ -10,6 +10,7 @@
   - AI HUB의 경상도 사투리 데이터 활용
 - 데이터 가공
 - AI 모델 선정
+  - KoBART 모델 사용
 - AI 모델 학습
   - 경상도 사투리 학습
 - 텍스트 번역기 기능 구현
@@ -26,20 +27,30 @@
 ## 개발 도구 및 기술 스택
 ### 1. 개발 언어
 - #### Python 3.11
-### 2. AI 모델 및 라이브러리
+### 2. 핵심 라이브러리 및 프레임워크
 - #### PyTorch 2.6.0
-  - 딥러닝 모델 학습 및 예측을 위한 프레임워크
+  - 딥러닝 모델 학습 및 예측에 사용
 - #### Transformers 4.49.0
-  - 사투리 번역을 위한 Transformer 기반 모델(예: T5, BERT, GPT 등)
+  - 사투리 번역을 위한 Transformer 기반 모델 구현
 - #### KoNLPy 0.6.0
-  - 한국어 텍스트 자연어 처리(NLP)를 위한 라이브러리
+  - 한국어 텍스트 형태소 분석 및 자연어 처리(NLP)에 사용
 - #### SpeechRecognition 3.14.1
-  - 음성 인식 및 텍스트 변환 기능을 제공하는 라이브러리
-### 3. 데이터베이스
+  - 음성 입력을 텍스트로 변환하는 기능 제공
+- #### SentencePiece 0.1.99
+  - KoBART tokenizer에 사용되는 subword segmentation 도구
+- #### scikit-learn 1.4.1
+  - 모델 성능 평가 및 전처리에 사용
+- #### datasets 3.4.1
+  - Hugging Face Dataset 포맷 기반 데이터 관리에 사용
+### 3. AI 모델
+- #### KoBART
+  - Text-to-Text Translation Model
+  - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
+### 4. 데이터베이스
 - #### PostgreSQL
   - 데이터 수집 및 저장을 위한 관계형 데이터베이스
   - 데이터 관리 및 쿼리 효율성을 위해 사용
-### 4. 개발 환경
+### 5. 개발 환경
 - #### PyCharm
   - Python 개발을 위한 IDE
 - #### GitHub
