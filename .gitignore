@@ -10,5 +10,3 @@ __pycache__/
 .idea/
 
 /data/gsang_original_data/
-
-/models/test.py

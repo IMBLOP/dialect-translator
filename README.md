@@ -43,7 +43,7 @@
 - #### datasets 3.4.1
   - Hugging Face Dataset 포맷 기반 데이터 관리에 사용
 ### 3. AI 모델
-- #### KoBART
+- #### KoBART (gogamza/kobart-base-v2)
   - Text-to-Text Translation Model
   - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
 ### 4. 데이터베이스
