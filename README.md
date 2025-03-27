@@ -46,6 +46,10 @@
 - #### KoBART (gogamza/kobart-base-v2)
   - Text-to-Text Translation Model
   - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
+- #### 모델 학습
+  - {'train_runtime': 53819.1529, 'train_samples_per_second': 116.408, 'train_steps_per_second': 7.276, 'train_loss': 0.0028233984399952715, 'epoch': 3.0}                                                                              
+  100%|█████████| 391563/391563 [14:56:59<00:00,  7.28it/s]
+
 ### 4. 데이터베이스
 - #### PostgreSQL
   - 데이터 수집 및 저장을 위한 관계형 데이터베이스
