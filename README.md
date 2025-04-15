@@ -49,10 +49,10 @@
   - Text-to-Text Translation Model
   - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
 - #### 모델 학습
-  - 학습 코드
+  - [학습 코드](src/training/training.py)
   - 문제 해결
 - #### 모델 평가(BERT_SCORE)
-  - 평가 코드
+  - [평가 코드](src/evaluation/bert_score_eval.py)
   - 문제 해결
 
 ### 4. 데이터베이스
