@@ -42,13 +42,18 @@
   - 모델 성능 평가 및 전처리에 사용
 - #### datasets 3.4.1
   - Hugging Face Dataset 포맷 기반 데이터 관리에 사용
+- #### bert_score 0.3.13
+  - Model Evaluation 단계의 의미적 유사도 측정에 사용
 ### 3. AI 모델
 - #### KoBART (gogamza/kobart-base-v2)
   - Text-to-Text Translation Model
   - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
 - #### 모델 학습
-  - {'train_runtime': 53819.1529, 'train_samples_per_second': 116.408, 'train_steps_per_second': 7.276, 'train_loss': 0.0028233984399952715, 'epoch': 3.0}                                                                              
-  100%|█████████| 391563/391563 [14:56:59<00:00,  7.28it/s]
+  - 학습 코드
+  - 문제 해결
+- #### 모델 평가(BERT_SCORE)
+  - 평가 코드
+  - 문제 해결
 
 ### 4. 데이터베이스
 - #### PostgreSQL

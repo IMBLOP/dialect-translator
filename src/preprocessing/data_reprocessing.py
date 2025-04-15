@@ -3,7 +3,7 @@ import csv
 
 # BASE_DIR 및 처리된 CSV 파일들이 있는 폴더 경로 설정
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-processed_dir = os.path.join(BASE_DIR, "data/gsang_processed_data/Validation")
+processed_dir = os.path.join(BASE_DIR, "data/gsang_processed_data/Training")
 
 # 합칠 CSV 파일 경로 (예: processed_dir에 combined_filtered.csv라는 파일로 저장)
 output_csv_path = os.path.join(processed_dir, "combined_filtered.csv")
