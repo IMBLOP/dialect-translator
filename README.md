@@ -45,15 +45,15 @@
 - #### bert_score 0.3.13
   - Model Evaluation 단계의 의미적 유사도 측정에 사용
 ### 3. AI 모델
-- #### KoBART (gogamza/kobart-base-v2)
+- #### KoBART (gogamza/kobart-base-v2) [선정 과정](https://github.com/IMBLOP/dialect-translator/issues/2#issue-2995355902)
   - Text-to-Text Translation Model
   - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
 - #### 모델 학습
   - [학습 코드](src/training/training.py)
-  - 문제 해결
+  - [문제 해결](https://github.com/IMBLOP/dialect-translator/issues/1#issue-2995320637)
 - #### 모델 평가(BERT_SCORE)
   - [평가 코드](src/evaluation/bert_score_eval.py)
-  - 문제 해결
+  - [문제 해결](https://github.com/IMBLOP/dialect-translator/issues/3#issue-2995488377)
 
 ### 4. 데이터베이스
 - #### PostgreSQL
