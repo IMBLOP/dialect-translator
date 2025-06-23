@@ -55,11 +55,7 @@
   - [평가 코드](src/evaluation/bert_score_eval.py)
   - [문제 해결](https://github.com/IMBLOP/dialect-translator/issues/3#issue-2995488377)
 
-### 4. 데이터베이스
-- #### PostgreSQL
-  - 데이터 수집 및 저장을 위한 관계형 데이터베이스
-  - 데이터 관리 및 쿼리 효율성을 위해 사용
-### 5. 개발 환경
+### 4. 개발 환경
 - #### PyCharm
   - Python 개발을 위한 IDE
 - #### GitHub
@@ -71,6 +67,10 @@
 
 ## 사용 데이터
 　[AI HUB 한국어 방언 발화(경상도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=119)
+  [AI HUB 한국어 방언 발화(제주도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=121)
+  [AI HUB 한국어 방언 발화(전라도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=120)
+  [AI HUB 한국어 방언 발화(강원도)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=118)  
+
 
 ---
 
