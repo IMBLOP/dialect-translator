@@ -5,10 +5,16 @@ import csv
 # 현재 스크립트(insert_data.py)의 절대 경로를 기준으로 CSV 파일 경로 설정
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-processed_dir = os.path.join(BASE_DIR, "data/gsang_processed_data/Training")
+processed_dir = os.path.join(BASE_DIR, "Data/Validation")
 
 # 정규 표현식 패턴 정의
-pattern = r'&[a-zA-Z0-9]+&|\(.*?\)|[)]|-[^-\n]*-|{.*?}'
+pattern = (
+    r'\(.*?\)'            # ( … )  전체
+    r'|-[^-\n]*-'         # - … -  전체
+    r'|{.*?}'             # { … }  전체
+    r'|&[A-Za-z0-9]+&'    # &companyname5&  등
+    r'|[\/\*\#()]'        # / * # ( )  한 글자
+)
 
 # Training 폴더 안의 CSV 파일들 순회
 for filename in os.listdir(processed_dir):

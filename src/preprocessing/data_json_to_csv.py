@@ -4,8 +4,8 @@ import csv
 
 # 현재 스크립트(insert_data.py)의 절대 경로를 기준으로 Training 폴더 경로 설정
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-original_dir = os.path.join(BASE_DIR, "data\gsang_original_data\Training")
-processed_dir = os.path.join(BASE_DIR, "data\gsang_processed_data\Training")
+original_dir = os.path.join(BASE_DIR, "Data\gangwon_train")
+processed_dir = os.path.join(BASE_DIR, "Data\gangwon_train")
 
 # Training 폴더 안의 JSON 파일들 순회
 for filename in os.listdir(original_dir):
@@ -13,7 +13,7 @@ for filename in os.listdir(original_dir):
         file_path = os.path.join(original_dir, filename)
 
         # JSON 파일 열기
-        with open(file_path, "r", encoding="utf-8") as f:
+        with open(file_path, "r", encoding="utf-8-sig") as f:
             data = json.load(f)
 
         # 결과를 담을 리스트
@@ -28,7 +28,7 @@ for filename in os.listdir(original_dir):
         csv_file_path = os.path.join(processed_dir, csv_filename)
 
         # CSV로 저장
-        with open(csv_file_path, mode="w", encoding="utf-8", newline='') as csvfile:
+        with open(csv_file_path, mode="w", encoding="utf-8-sig", newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(["사투리", "표준어"])  # 헤더 작성
             for dialect, standard in result:
