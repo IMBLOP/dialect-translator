@@ -122,6 +122,6 @@ Whisper 기반 음성 인식, KoBART 기반 기계 번역, pyttsx3 기반 음성
 
 ---
 
-## [학술대회 논문](https://github.com/IMBLOP/dialect-translator/blob/a3f03e5a8505fd4f43c02946305a9076b548a4e9/Whisper%C2%B7KoBART%20%EA%B8%B0%EB%B0%98%20%ED%95%9C%EA%B5%AD%EC%96%B4%20%EB%B0%A9%EC%96%B8-%ED%91%9C%EC%A4%80%EC%96%B4%20%EB%B2%88%EC%97%AD%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EA%B3%84%20%EB%B0%8F%20%EA%B5%AC%ED%98%84_%EA%B3%BD%EB%8C%80%ED%98%81.pdf)
+## [학술대회 논문](https://github.com/IMBLOP/dialect-translator/blob/9aaa44ac0593a70ab2d82bdc6df0f9d2151a4277/src/portfolio/Whisper%C2%B7KoBART%20%EA%B8%B0%EB%B0%98%20%ED%95%9C%EA%B5%AD%EC%96%B4%20%EB%B0%A9%EC%96%B8-%ED%91%9C%EC%A4%80%EC%96%B4%20%EB%B2%88%EC%97%AD%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EA%B3%84%20%EB%B0%8F%20%EA%B5%AC%ED%98%84_%EA%B3%BD%EB%8C%80%ED%98%81.pdf)
 
-## [최종 발표 PPT](https://github.com/IMBLOP/dialect-translator/blob/08b2d22b834034f647ee7f5c1315c1a89577a076/%EC%82%AC%ED%88%AC%EB%A6%AC%20%EB%B2%88%EC%97%AD%EA%B8%B0%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.pdf)
+## [최종 발표 PPT](https://github.com/IMBLOP/dialect-translator/blob/9aaa44ac0593a70ab2d82bdc6df0f9d2151a4277/src/portfolio/%EC%82%AC%ED%88%AC%EB%A6%AC%20%EB%B2%88%EC%97%AD%EA%B8%B0%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.pdf)
