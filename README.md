@@ -50,24 +50,65 @@ Whisper 기반 음성 인식, KoBART 기반 기계 번역, pyttsx3 기반 음성
 - #### tqdm 4.67.1 · numpy 1.26.4 · pandas 2.2.3  
   - 데이터 처리, 배열 연산, 진행률 출력 등 유틸리티 전반
     
-### 3. AI 모델
+### 3. 기계 번역 모델
 - #### KoBART (gogamza/kobart-base-v2) [선정 과정](https://github.com/IMBLOP/dialect-translator/issues/2#issue-2995355902)
   - Text-to-Text Translation Model
   - 40GB 이상의 한국어 텍스트에 대해 학습한 encoder-decoder 언어 모델
 - #### 모델 학습
+  - [데이터 전처리](src/preprocessing)
   - [학습 코드](src/training/training.py)
   - [문제 해결](https://github.com/IMBLOP/dialect-translator/issues/1#issue-2995320637)
 - #### 모델 평가(BERT_SCORE)
   - [평가 코드](src/evaluation/bert_score_eval.py)
   - [문제 해결](https://github.com/IMBLOP/dialect-translator/issues/3#issue-2995488377)
 
-### 4. 개발 환경
+### 4. STT 모델
+- #### Whisper (openai/whisper-small)
+  - Speech-to-Text Translation Model
+  - 인코더–디코더 구조로 한국어 적응 성능이 뛰어나고 추가 미세조정이 용이
+- #### 모델 학습
+  - [데이터 전처리](src/stt/stt_preprocess.py)
+  - [학습 코드](src/stt/Whisper.ipynb)
+  - [문제 해결](https://github.com/IMBLOP/dialect-translator/issues/4)
+
+### 5. 개발 환경
 - #### PyCharm
   - Python 개발을 위한 IDE
 - #### Google Colab
   - TTS(Whisper) 모델 학습에 필요한 그래픽 메모리 최적화를 위해 사용
 - #### GitHub
   - 버전 관리 및 프로젝트 진행사항 기록을 위한 플랫폼
+
+ 
+## 통합 번역 모듈 로직
+### 0. 사투리 지역 선택 & 경로 설정
+- 사용자 입력(1~4) → 경상·제주·전라·강원 stt_dir / trans_dir / wav_dir 변수 지정
+
+### 1. STT 모델 로드 & 준비
+- WhisperForConditionalGeneration.from_pretrained(<stt_dir>)로 fine-tuned STT 모델 호출
+- WhisperProcessor.from_pretrained(<stt_dir>)로 processor 불러오기
+- model.eval() 로 평가 모드 전환
+
+### 2. 번역 모델 로드 & 준비
+- BartForConditionalGeneration.from_pretrained(<trans_dir>)로 fine-tuned 번역 모델 호출
+- AutoTokenizer.from_pretrained(<trans_dir>)로 tokenizer 불러오기
+- model.eval() 로 평가 모드 전환
+
+### 3. 오디오 청크 분할
+- torchaudio.load() → 모노 변환 → 16 kHz 리샘플
+- 30 초 단위로 슬라이싱하여 청크 리스트 반환
+
+### 4. STT → 문장 분리
+- 각 청크 → stt_processor 전처리 → stt_model.generate()
+- batch_decode()로 텍스트 추출 → kss.split_sentences()로 문장 분할
+
+### 5. 문장별 사투리 → 표준어 번역
+- 문장 → trans_tokenizer() → trans_model.generate()
+- trans_tokenizer.decode()로 표준어 문장 복원
+
+### 6. 최종 출력 & TTS
+- 사투리·표준어 쌍 번호 출력
+- 선택된 표준어 문장 → pyttsx3.say() → runAndWait()
 
 
 ## 사용 데이터
