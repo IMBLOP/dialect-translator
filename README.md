@@ -9,7 +9,8 @@ Whisper 기반 음성 인식, KoBART 기반 기계 번역, pyttsx3 기반 음성
   - AI HUB의 지역별 방언 발화 데이터 활용
 - 데이터 가공
 - AI 모델 선정
-  - KoBART 모델 사용
+  - 기계번역 - KoBART 모델 사용
+  - TTS - Whisper-small 모델 사용
 - AI 모델 학습
   - 지역별 방언 데이터 학습
 - 텍스트 번역기 기능 구현
