@@ -1,7 +1,5 @@
 /venv/
 
-db_connection.py
-
 *.log
 *.tmp
 
@@ -9,6 +7,12 @@ __pycache__/
 
 .idea/
 
-/data/gsang_original_data/
-
-/models/
+/Data/
+/models/gangwon/
+/models/jeju/
+/models/jeolla/
+/models/model03/
+/src/stt/gangwon_model/
+/src/stt/gsang_model/
+/src/stt/jeju_model/
+/src/stt/jeolla_model/
